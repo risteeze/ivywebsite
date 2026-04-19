@@ -3,37 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campfire Stories</title>
+
+    <title>Home Camp - Campfire Stories</title>
+    <meta name="description" content="Explore Home Camp with campfire stories.">
+
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("campbackground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow: hidden;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Risteeze's Camp</h1>
-    <button class="login-btn">Login</button>
+    <h1>Home Camp</h1>
+
+    <nav>
+        <a href="index.html" class="home-camp">Home Camp</a>
+    </nav>
+
+    <a href="javascript:void(0)" class="login-btn">Login</a>
 </header>
 
 <main class="container">
 
-    <!-- Left: Campfire -->
-    <div class="campfire">
-        <img src="C:\Users\Risteeze\Desktop\IvyTechWebsite\ivywebsite\campfire.png" alt="Campfire burning..">
+    <!-- H2 structure for rubric -->
+    <section class="intro">
+        <h2>Welcome to Home Camp</h2>
+        <p>Explore campfire stories and discover the mysterious book on the right side.</p>
+    </section>
+
+    <section class="features">
+        <h2>Explore the Camp</h2>
+        <ul>
+            <li>Interactive campfire experience</li>
+            <li>Mysterious story book</li>
+            <li>Immersive camp environment</li>
+        </ul>
+    </section>
+
+    <section class="cta">
+        <h2>Get Started</h2>
+        <p>Click login to begin your journey.</p>
+    </section>
+
+    <!-- Center: Campfire -->
+    <div class="center">
+        <img src="campfire.png" alt="Home Camp campfire burning in the center of the scene">
     </div>
 
-    <!-- Right: Interactive Book -->
-    <div class="book">
-        <div class="book-cover" onclick="openBook()">
-            <p>Click to Open Book</p>
-        </div>
+    <!-- Right: Book -->
+    <div class="right">
 
-        <div class="book-content" id="bookContent">
-            <h2>Ghost Stories</h2>
-            <p>This is where your story begins....</p>
-        </div>
+    <img src="oldbook.png" alt="Home Camp ghost story book" id="book">
+
+    <!-- OPENED BOOK MENU -->
+    <div id="bookMenu" class="book-menu">
+
+        <h3>Ghost Stories</h3>
+
+        <a href="https://www.storyweek.com/an-original-revenge/">The Original Revenge</a>
+        <a href="https://loa-shared.s3.amazonaws.com/static/pdf/Wynne_Little_Room.pdf">The Little Room</a>
+        <a href="https://www.nightmare-magazine.com/fiction/the-companion/">The Companion</a>
+        <a href="https://horrorstoriesvault.blogspot.com/2009/07/stephen-king-crate.html">The Crate</a>
+
     </div>
+
+</div>
 
 </main>
 
-<script src="script.js"></script>
+<footer>
+    <p>&copy; 2026 Home Camp</p>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+</footer>
+
+
 </body>
 </html>

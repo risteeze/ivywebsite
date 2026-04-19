@@ -1,0 +1,168 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  padding-left: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 10000;
+}
+
+/* Title styling */
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* Login button */
+.login-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #ffb347;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10001;
+}
+
+.login-btn:hover {
+  background: #ffa31a;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+/* Home Camp link */
+.home-camp {
+  position: relative;
+  z-index: 9999;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.home-camp:hover {
+  text-decoration: underline;
+}
+
+/* ===== CAMPFIRE / BOOK LAYOUT ===== */
+.center {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.center img {
+  width: 250px;
+  height: auto;
+  padding-top: 550px;
+  padding-right: 10px;
+}
+
+.right {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.right img {
+  width: 140px;
+  height: auto;
+  padding-right: 570px;
+  padding-top: 600px;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+
+.book-menu {
+  position: absolute;
+  right: 180px;
+  top: 40%;
+
+  width: 200px;
+  padding: 15px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+
+  border-radius: 10px;
+
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* links inside book */
+.book-menu a {
+  color: #ffcc66;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.book-menu a:hover {
+  text-decoration: underline;
+}
+
+/* show state */
+.book-menu.show {
+  display: flex;
+}
+
+/* book cursor */
+#book {
+  display: block;
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  position: relative;
+  z-index: 10000;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
